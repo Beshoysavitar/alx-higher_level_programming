@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-"""
-wrtie_file
-"""
+"""write file module"""
 
 
 def write_file(filename="", text=""):
-        """returns the number "filename" from "text" """
-            with open(filename, 'w', encoding='utf=8') as f:
-                        return f.write(text)
+     """write_file"""
+     with open(filename, encoding="utf-8", mode="w") as file:
+        return file.write(text)
