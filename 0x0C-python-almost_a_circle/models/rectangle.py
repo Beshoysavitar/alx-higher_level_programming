@@ -173,9 +173,9 @@ class Rectangle(Base):
         """Assigns an argument
 
         Args:
-            *args (tuple): arg.
-            **kwargs (dict): double pointer to a dictionary.
-            # print(args, kwargs)
+            args (tuple): arg.
+            kwargs (dict): double pointer to a dictionary.
+            print(args, kwargs)
         """
         if args:
             self.__update(*args)
