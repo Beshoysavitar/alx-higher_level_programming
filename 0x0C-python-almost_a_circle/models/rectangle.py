@@ -138,19 +138,19 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
-        """Prints in stdout the Rectangle instance with the character #."""
+        """Prints in stdout #."""
         s = '\n' * self.y + \
             (' ' * self.x + '#' * self.width + '\n') * self.height
         print(s, end='')
 
     def __str__(self):
-        """Returns string info about this rectangle."""
+        """Returns string rectangle."""
         return '[{}] ({}) {}/{} - {}/{}'.\
             format(type(self).__name__, self.id, self.x, self.y, self.width,
                    self.height)
 
     def __update(self, id=None, width=None, height=None, x=None, y=None):
-        '''Internal method that updates instance attributes via */**args.'''
+        """Internal method that updatesattributes """
         if id is not None:
             self.id = id
         if width is not None:
@@ -163,10 +163,10 @@ class Rectangle(Base):
             self.y = y
 
     def update(self, *args, **kwargs):
-        """Assigns an argument to each attribute
+        """Assigns an argument
 
         Args:
-            *args (tuple): arguments.
+            *args (tuple): arg.
             **kwargs (dict): double pointer to a dictionary.
         """
         # print(args, kwargs)
