@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines a class Rectangle"""
+"""Defines a class named Rectangle"""
 from models.base import Base
 
 
@@ -15,7 +15,7 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """Creates new instances of rectangle.
 
-        Args:
+        parametars:
             width (int): width of rectangle.
             height (int): height of rectangle.
             x (int, optional): x. Defaults to 0.
@@ -41,7 +41,7 @@ class Rectangle(Base):
     def width(self, value):
         """Property setter for width of rectangle.
 
-        Args:
+        parametars:
             value (int): width of rectangle.
 
         Raises:
@@ -64,7 +64,7 @@ class Rectangle(Base):
     def height(self, value):
         """Property setter for height of rectangle.
 
-        Args:
+        parametars:
             value (int): height of rectangle.
 
         Raises:
@@ -87,7 +87,7 @@ class Rectangle(Base):
     def x(self, value):
         """Property setter for x.
 
-        Args:
+        parametars:
             value (int): x.
 
         Raises:
@@ -110,7 +110,7 @@ class Rectangle(Base):
     def y(self, value):
         """Property setter for y.
 
-        Args:
+        parametars:
             value (int): y.
 
         Raises:
@@ -172,7 +172,7 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         """Assigns an argument
 
-        Args:
+        parametars:
             *args (tuple): arg.
             **kwargs (dict): double pointer to a dictionary.
         """
