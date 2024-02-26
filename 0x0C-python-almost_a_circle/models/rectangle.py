@@ -153,6 +153,7 @@ class Rectangle(Base):
         """Class that defines properties of Rectangle.
 
         Attributes:
+            id (int): id.
             width (int): width of rectangle.
             height (int): height of rectangle.
             x (int): x.
@@ -173,9 +174,8 @@ class Rectangle(Base):
         """Assigns an argument
 
         Args:
-            args (tuple): arg.
-            kwargs (dict): double pointer to a dictionary.
-            print(args, kwargs)
+            *args (tuple): arg.
+            **kwargs (dict): double pointer to a dictionary.
         """
         if args:
             self.__update(*args)
