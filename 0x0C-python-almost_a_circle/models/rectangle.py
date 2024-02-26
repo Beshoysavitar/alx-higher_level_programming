@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Module for Rectangle.'''
+'''Module for req.'''
 from models.base import Base
 
 
