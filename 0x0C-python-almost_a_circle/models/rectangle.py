@@ -122,7 +122,7 @@ class Rectangle(Base):
 
     def validate_integer(self, name, value, eq=True):
         """Method for validating the value."""
-        if type(value) != int:
+        if isinstance(value) != int:
             raise TypeError("{} must be an integer".format(name))
         if eq and value < 0:
             raise ValueError("{} must be >= 0".format(name))
@@ -146,14 +146,13 @@ class Rectangle(Base):
     def __str__(self):
         """Returns string rectangle."""
         return '[{}] ({}) {}/{} - {}/{}'.\
-            format(type(self).__name__, self.id, self.x, self.y, self.width,
+            format(isinstance(self).__name__, self.id, self.x, self.y, self.width,
                    self.height)
 
     def __update(self, id=None, width=None, height=None, x=None, y=None):
         """Class that defines properties of Rectangle.
 
         Attributes:
-            id (int): id.
             width (int): width of rectangle.
             height (int): height of rectangle.
             x (int): x.
@@ -180,9 +179,13 @@ class Rectangle(Base):
         if args:
             self.__update(*args)
         elif kwargs:
-            self.__update(**kwaargs)
+            self.__update(**kwargs)
 
     def to_dictionary(self):
-        """Returns the dictionary representation of a Rectangle."""
+        """Returns the dictionary representation of a Rectangle.
+
+        Returns:
+            dict: rectangle.
+        """
         return {"id": self.id, "width": self.__width, "height": self.__height,
                 "x": self.__x, "y": self.__y}
