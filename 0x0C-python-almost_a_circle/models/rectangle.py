@@ -150,7 +150,14 @@ class Rectangle(Base):
                    self.height)
 
     def __update(self, id=None, width=None, height=None, x=None, y=None):
-        """Internal method that updatesattributes """
+        """Class that defines properties of Rectangle.
+
+        Attributes:
+            width (int): width of rectangle.
+            height (int): height of rectangle.
+            x (int): x.
+            y (int): y.
+        """
         if id is not None:
             self.id = id
         if width is not None:
