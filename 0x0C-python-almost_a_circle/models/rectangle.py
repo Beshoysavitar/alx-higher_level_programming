@@ -103,7 +103,7 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """rectangle class module"""
-        print(args, kwargs)
+        #print(args, kwargs)
         if args:
             self.__update(*args)
         elif kwargs:
