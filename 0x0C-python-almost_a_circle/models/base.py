@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-'''Module class.'''
+'''Module for Base class.'''
+from json import dumps, loads
+import csv
+
 
 class Base:
     '''A representation of the base of our OOP hierarchy.'''
